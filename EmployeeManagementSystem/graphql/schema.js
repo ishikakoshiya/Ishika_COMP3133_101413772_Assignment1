@@ -27,7 +27,6 @@ const typeDefs = gql`
     getEmployeeById(eid: ID!): Employee
     searchEmployees(designation: String, department: String): [Employee]
   }
-
   type Mutation {
     signup(username: String!, email: String!, password: String!): String
     addEmployee(first_name: String!, last_name: String!, email: String!, gender: String!, designation: String!, salary: Float!, date_of_joining: String!, department: String!, employee_photo: String): Employee
